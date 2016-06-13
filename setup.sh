@@ -15,86 +15,94 @@ echo "user: $USER" 1>&2 # only logfile
 declare -a arr=()
 
 
-arr[0]="brew tap caskroom/cask"
-
-
-#
-# Install cask
-#
-arr[0]="brew tap caskroom/cask"
 
 #
 # Install wget
 #
-arr[1]="brew install wget"
+arr+="brew install wget"
 
 #
 # install cocoapods
 #
 # arr[2]="sudo gem install cocoapods" this does not work for el capitan
-arr[2]="sudo gem install -n /usr/local/bin cocoapods"
+arr+="sudo gem install -n /usr/local/bin cocoapods"
 
 #
 # dropbox
 #
-arr[3]="brew cask install dropbox"
+arr+="brew cask install dropbox"
 
 #
 # Chrome
 #
-arr[4]="brew cask install google-chrome"
+arr+="brew cask install google-chrome"
 
 #
 # vlc
 #
-arr[5]="brew cask install vlc"
+arr+="brew cask install vlc"
 
 #
 #sublime
 #
-arr[6]="brew cask install sublime-text"
+arr+="brew cask install sublime-text"
 
 #
 #slack
 #
 
-arr[7]="brew cask install slack"
+arr+="brew cask install slack"
 
 #
 #flux
 #
-arr[8]="brew cask install flux"
+arr+="brew cask install flux"
 
 #
 #arduino
 #
-arr[9]="brew cask install arduino"
+arr+="brew cask install arduino"
 
 
 #
 #filezilla
 #
-arr[10]="brew cask install filezilla"
+arr+="brew cask install filezilla"
 
 #
 #firefox
 #
-arr[11]="brew cask install firefox"
+arr+="brew cask install firefox"
 
 #
 #evernote
 #
-arr[12]="brew cask install evernote"
+arr+="brew cask install evernote"
 
 #
 #SQL workbench
 #
-arr[13]="brew cask install mysqlworkbench"
+arr+="brew cask install mysqlworkbench"
 
 #
 #suspicious package
 #
-arr=[14]="brew cask install suspicious-package"
+arr+="brew cask install suspicious-package"
+
+#
+# git flow
+#
+arr+="brew install git-flow-avh"
+
+#
+# Source tree
+#
+arr+="brew cask install sourcetree"
+
+#
+# homebrew cask
+#
+arr+="brew tap caskroom/cask"
 
 #
 #the program asks wether the user wants to install all the neccesary tools
